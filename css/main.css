@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -10,13 +11,46 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   background-color: white;
+  background-color: #192C72;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.note {
+  width: 50px;
+  height: 50px;
+  background: url("/img/musical-note.svg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  -webkit-animation: 0.5s ease-in animation1 forwards;
+          animation: 0.5s ease-in animation1 forwards;
+}
+
+.text {
+  width: 100%;
+  height: 20%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Piano {
@@ -28,6 +62,10 @@
   -ms-grid-columns: (1fr)[35];
       grid-template-columns: repeat(35, 1fr);
   position: relative;
+}
+
+.Piano .button-white:hover {
+  background-color: #C2C2C2;
 }
 
 .Piano .button-white {
@@ -141,5 +179,203 @@
 
 .Piano .button-black-25 {
   left: 96.2%;
+}
+
+@media screen and (max-width: 425px) {
+  .Piano {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[15];
+        grid-template-columns: repeat(15, 1fr);
+    height: 23vh;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container {
+    width: 100%;
+  }
+  .button-white-16 {
+    display: none;
+  }
+  .button-white-17 {
+    display: none;
+  }
+  .button-white-18 {
+    display: none;
+  }
+  .button-white-19 {
+    display: none;
+  }
+  .button-white-20 {
+    display: none;
+  }
+  .button-white-21 {
+    display: none;
+  }
+  .button-white-22 {
+    display: none;
+  }
+  .button-white-23 {
+    display: none;
+  }
+  .button-white-24 {
+    display: none;
+  }
+  .button-white-25 {
+    display: none;
+  }
+  .button-white-26 {
+    display: none;
+  }
+  .button-white-27 {
+    display: none;
+  }
+  .button-white-28 {
+    display: none;
+  }
+  .button-white-29 {
+    display: none;
+  }
+  .button-white-30 {
+    display: none;
+  }
+  .button-white-31 {
+    display: none;
+  }
+  .button-white-32 {
+    display: none;
+  }
+  .button-white-33 {
+    display: none;
+  }
+  .button-white-34 {
+    display: none;
+  }
+  .button-white-35 {
+    display: none;
+  }
+  .button-black-11 {
+    display: none;
+  }
+  .button-black-12 {
+    display: none;
+  }
+  .button-black-13 {
+    display: none;
+  }
+  .button-black-14 {
+    display: none;
+  }
+  .button-black-15 {
+    display: none;
+  }
+  .button-black-16 {
+    display: none;
+  }
+  .button-black-17 {
+    display: none;
+  }
+  .button-black-18 {
+    display: none;
+  }
+  .button-black-19 {
+    display: none;
+  }
+  .button-black-20 {
+    display: none;
+  }
+  .button-black-21 {
+    display: none;
+  }
+  .button-black-22 {
+    display: none;
+  }
+  .button-black-23 {
+    display: none;
+  }
+  .button-black-24 {
+    display: none;
+  }
+  .button-black-25 {
+    display: none;
+  }
+  .button-black, .Piano .button-black-2, .Piano .button-black-3, .Piano .button-black-4, .Piano .button-black-5, .Piano .button-black-6, .Piano .button-black-7, .Piano .button-black-8, .Piano .button-black-9, .Piano .button-black-10, .Piano .button-black-11, .Piano .button-black-12, .Piano .button-black-13, .Piano .button-black-14, .Piano .button-black-15, .Piano .button-black-16, .Piano .button-black-17, .Piano .button-black-18, .Piano .button-black-19, .Piano .button-black-20, .Piano .button-black-21, .Piano .button-black-22, .Piano .button-black-23, .Piano .button-black-24, .Piano .button-black-25 {
+    width: 5%;
+    height: 50%;
+  }
+  .Piano .button-black, .Piano .button-black-2, .Piano .button-black-3, .Piano .button-black-4, .Piano .button-black-5, .Piano .button-black-6, .Piano .button-black-7, .Piano .button-black-8, .Piano .button-black-9, .Piano .button-black-10, .Piano .button-black-11, .Piano .button-black-12, .Piano .button-black-13, .Piano .button-black-14, .Piano .button-black-15, .Piano .button-black-16, .Piano .button-black-17, .Piano .button-black-18, .Piano .button-black-19, .Piano .button-black-20, .Piano .button-black-21, .Piano .button-black-22, .Piano .button-black-23, .Piano .button-black-24, .Piano .button-black-25 {
+    width: 5%;
+    height: 50%;
+    left: 4%;
+  }
+  .Piano .button-black-2 {
+    left: 11%;
+  }
+  .Piano .button-black-9 {
+    left: 84%;
+  }
+  .Piano .button-black-8 {
+    left: 64%;
+  }
+  .Piano .button-black-7 {
+    left: 58%;
+  }
+  .Piano .button-black-6 {
+    left: 51%;
+  }
+  .Piano .button-black-5 {
+    left: 38%;
+  }
+  .Piano .button-black-4 {
+    left: 31%;
+  }
+  .Piano .button-black-3 {
+    left: 18%;
+  }
+  .Piano .button-black-10 {
+    left: 91%;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
+@-webkit-keyframes animation1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
