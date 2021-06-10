@@ -28,7 +28,7 @@
 .note {
   width: 50px;
   height: 50px;
-  background: url("/img/musical-note.svg");
+  background: url("../img/musical-note.svg");
   background-position: center;
   background-size: cover;
   position: absolute;
